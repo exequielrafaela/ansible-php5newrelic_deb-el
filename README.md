@@ -1,4 +1,4 @@
-# Ansible franklinkim.php5-newrelic role
+# Ansible exequielrafaela.php5-newrelic role
 
 > `exequielrafaela.php5-newrelic` is an [Ansible](http://www.ansible.com) role which:
 >
