@@ -24,7 +24,7 @@ Using `requirements.yml`:
 Using `git`:
 
 ```shell
-$ git clone https://github.com/exequielrafaela/ansible-php5-newrelic.git exequielrafaela.php5-newrelic
+$ git clone https://github.com/exequielrafaela/ansible-php5newrelic_deb-el.git
 ```
 
 ## Dependencies
