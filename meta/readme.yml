@@ -1,0 +1,10 @@
+---
+
+galaxy_name: exequielrafaela.php5-newrelic
+github_user: exequielrafaela
+github_name: ansible-php5-newrelic
+description: |
+  > * installs newrelic php agent
+  > * configures newrelic php agent
+  >
+  > Note: Tests are failing due to invalid key

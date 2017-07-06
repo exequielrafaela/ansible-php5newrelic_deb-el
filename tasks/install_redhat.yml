@@ -1,0 +1,29 @@
+---
+
+- name: Installing dependencies
+  yum:
+    name: http://yum.newrelic.com/pub/newrelic/el5/i386/newrelic-repo-5-3.noarch.rpm
+    state: present
+  yum:
+    name: http://yum.newrelic.com/pub/newrelic/el5/x86_64/newrelic-repo-5-3.noarch.rpm
+    state: present
+
+- name: Installing packages
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - newrelic-php5
+
+- name: Create necessary PHP directories
+  file:
+    path: /etc/php5/mods-available
+    owner: root
+    group: root
+    state: directory
+    recurse: yes
+    mode: 0755
+
+- name: Run the newrelic-install script
+  become: yes
+  command: newrelic-install install
